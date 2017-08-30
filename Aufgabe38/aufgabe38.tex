@@ -1,0 +1,108 @@
+\documentclass[a4paper,11pt]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{setspace}
+
+\usepackage{geometry}
+\geometry{top=3.5cm, left=3cm, right=3cm, bottom=3.5cm}
+
+\usepackage{lipsum}
+\usepackage{pdfpages}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{natbib}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\thepage}
+\rhead{\textit{\nouppercase \leftmark}}
+\cfoot{ }
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\emph{\thepage}}
+\fancyhead[LO]{\textit{\nouppercase \rightmark}}
+
+\graphicspath{ {pic/} }
+
+\usepackage{caption}
+\captionsetup[figure]{format=plain,justification=justified,font={footnotesize},labelfont=bf}
+
+\usepackage{color}
+ \definecolor{myblue}{rgb}{0,0,0.40}										% aufgabe 40
+ \definecolor{myred}{rgb}{1,0,0}
+\usepackage[colorlinks=true,linkcolor=myblue,citecolor=myblue,bookmarks=true,bookmarksopen=true,		% aufgabe 43
+	    pdfauthor={Ingo},pdftitle={aufgabe_38},pdfkeywords={Latex,Tex,ASQ,Ingo},				% aufgabe 41
+	    pdfsubject={tex},pdfcreator={Ingo},pdfproducer={pdflatex},pdfpagelayout=SinglePage]{hyperref}	% aufgabe 40, 41, 43
+	    
+
+\usepackage{ragged2e}
+
+\usepackage{placeins}
+
+\usepackage{natbib}
+ \bibliographystyle{unsrtnat}
+ \setcitestyle{notesep={; },round,aysep={},yysep={;}}
+
+\title{Titel der Dissertation}
+	  
+
+
+\begin{document}
+\frontmatter
+\thispagestyle{empty}
+\doublespacing
+\centering{
+\ \\
+\ \\
+\vspace{1.25cm}
+\LARGE{\textbf{Titel der Dissertation}}\\
+\vspace{1.6cm}
+\Large{\textbf{Dissertation}}\\
+\large{\textbf{zur Erlangung des akademischen Grades}}\\
+doctor rerum naturalium (Dr. rer. nat.)\\
+\textbf{vorgelegt dem Rat der Fakultät für Mathematik und Informatik der Friedrich-Schiller-Universität Jena\\
+von} XXX\\
+\textbf{am} TT.MM.YYYY \textbf{in} XXX}
+\clearpage
+
+\singlespacing
+\raggedright
+\chapter*{Zusammenfassung}
+\justifying
+\lipsum[1-7]
+\newpage
+
+\chapter*{Danksagung}
+\lipsum[1-2]
+
+\tableofcontents
+
+\mainmatter
+\chapter{Einleitung}
+\input{chapters/einleitung}
+\pagebreak
+\chapter{Methoden}
+\input{chapters/methoden}
+\pagebreak
+\chapter{Ergebnisse}
+\input{chapters/ergebnisse}
+\pagebreak
+\chapter{Schlussfolgerung}
+\input{chapters/schlussfolgerung}
+
+\appendix
+%\nocite{}
+\bibliographystyle{alpha}
+\bibliography{buch.bib}
+
+\chapter{Anhang}
+\lipsum[1-2]
+
+\backmatter
+\listoffigures
+\includepdf[page=4]{../protokoll}						% aufgabe 39
+
+
+\end{document}

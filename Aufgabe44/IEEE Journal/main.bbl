@@ -1,0 +1,22 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{PFB{\etalchar{+}}11}
+
+\bibitem[FCB87]{Frymoyer:87}
+John~W Frymoyer and William Cats-Baril.
+\newblock Predictors of low back pain disability.
+\newblock {\em Clinical Orthopaedics and related research}, 221:89--98, 1987.
+
+\bibitem[PFB{\etalchar{+}}11]{Perrier:11}
+Thomas Perrier, Florian Fouchet, Guillaume Bastiat, Patrick Saulnier, and
+  Jean-Pierre Benoît.
+\newblock Opa quantification of amino groups at the surface of lipidic
+  nanocapsules (lncs) for ligand coupling improvement.
+\newblock {\em International journal of pharmaceutics}, 419:266--270, October
+  2011.
+
+\bibitem[Wol91]{Wolfram:91}
+Stephen Wolfram.
+\newblock {\em Mathematica: a system for doing mathematics by computer}.
+\newblock Addison-Wesley, 1991.
+
+\end{thebibliography}
