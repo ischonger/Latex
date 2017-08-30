@@ -7,11 +7,6 @@
 
 %\usepackage{showframe}
 
-% aufgabe 10
-\usepackage[utf8]{inputenc} % für deutsche Umlaute.
-\usepackage[T1]{fontenc}
-\usepackage[english,ngerman]{babel}
-
 %aufgabe 2
 \usepackage{geometry}
 \geometry{top=3cm, left=3cm, right=3cm, bottom=3.5cm}
@@ -19,7 +14,7 @@
 %aufgabe 3
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Ingo Schäfer}
+\lhead{Ingo Sch\"afer}
 \rhead{165220}
 \cfoot{\thepage\ von \pageref{LastPage}}
 
@@ -36,7 +31,12 @@
 %aufgabe 9
 \newcommand{\mycommand}[1]{\textbf{\ref{#1}}}
 
-% aufgabe 12 (für \sout)
+% aufgabe 10
+\usepackage[utf8]{inputenc} % für deutsche Umlaute.
+\usepackage[T1]{fontenc}
+\usepackage[english,ngerman]{babel}
+
+% aufgabe 12
 \usepackage{ulem}
 
 % aufgabe 13
@@ -134,6 +134,9 @@
 \thispagestyle{empty}
 %\setcounter{page}{0}		NOTE: Übersicht wird mitgezählt, aber nicht nummeriert.
 
+% aufgabe 7
+\input{tex/0_Vorwort}
+
 \pagebreak
 \section{Basics}					% aufgabe 6
 \label{sec:basics}
@@ -170,7 +173,7 @@
 
 \pagebreak
 \listoffigures				% aufgabe 27
-\listoftables				% aufgabe 32
+\listoftables				% aufgabe 33
 
 \label{LastPage}
 \end{document}
