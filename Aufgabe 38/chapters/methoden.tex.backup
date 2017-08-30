@@ -1,0 +1,25 @@
+\setcitestyle{notesep={; },round,aysep={},yysep={;}}
+Dazu möchte ich auf~\citep*[p.~12]{wolfram1991mathematica} verweisen.
+\lipsum[1-2]
+\section{Einfache Methode}
+Dazu möchte ich auf~\citep*[Frymouer][p.~36]{Frymoyer1987} verweisen.
+\lipsum[1-5]
+
+\section{Schwierige Methode}
+\lipsum[1-6]
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero,
+nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pel-
+lentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{platzhalter}
+\caption[Quisque facilisis auctor sapien.]
+{Quisque facilisis auctor sapien. Pellentesque gravida hendrerit lectus. Mauris
+rutrum sodales sapien. Fusce hendrerit sem vel lorem. Integer pellentesque massa vel augue. Integer
+elit tortor, feugiat quis, sagittis et, ornare non, lacus. Vestibulum posuere pellentesque eros. Quisque
+venenatis ipsum dictum nulla. Aliquam quis quam non metus eleifend interdum. Nam eget sapien
+ac mauris malesuada adipiscing. Etiam eleifend neque sed quam. Nulla facilisi. Proin a ligula. Sed
+id dui eu nibh egestas tincidunt. Suspendisse arcu.} 
+\end{figure}
+\lipsum[1-5]
+Dazu möchte ich auf~\citep*[Perrier]{Perrier2011} verweisen.

@@ -1,0 +1,30 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wolfram(1991)]{Wolfram:91}
+Stephen Wolfram.
+\newblock \emph{Mathematica: a system for doing mathematics by computer}.
+\newblock Addison-Wesley, 1991.
+
+\bibitem[Frymoyer and Cats-Baril(1987)]{Frymoyer:87}
+John~W Frymoyer and William Cats-Baril.
+\newblock Predictors of low back pain disability.
+\newblock \emph{Clinical Orthopaedics and related research}, 221:\penalty0
+  89--98, 1987.
+
+\bibitem[Perrier et~al.(2011)Perrier, Fouchet, Bastiat, Saulnier, and
+  Benoît]{Perrier:11}
+Thomas Perrier, Florian Fouchet, Guillaume Bastiat, Patrick Saulnier, and
+  Jean-Pierre Benoît.
+\newblock Opa quantification of amino groups at the surface of lipidic
+  nanocapsules (lncs) for ligand coupling improvement.
+\newblock \emph{International journal of pharmaceutics}, 419:\penalty0
+  266--270, October 2011.
+\newblock ISSN 1873-3476.
+\newblock \doi{10.1016/j.ijpharm.2011.07.028}.
+
+\end{thebibliography}

@@ -1,0 +1,176 @@
+\documentclass[a4paper,portrait,onecolumn,11pt, titlepage, tableofcontents]{article} % aufgabe 1,5,6
+%%%%%%%%%%%%%%%%%%%%%%%% preamble %%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsthm}
+\newtheorem{aufgabe}{Aufgabe}
+\usepackage{graphicx}
+
+%\usepackage{showframe}
+
+% aufgabe 10
+\usepackage[utf8]{inputenc} % für deutsche Umlaute.
+\usepackage[T1]{fontenc}
+\usepackage[english,ngerman]{babel}
+
+%aufgabe 2
+\usepackage{geometry}
+\geometry{top=3cm, left=3cm, right=3cm, bottom=3.5cm}
+
+%aufgabe 3
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Ingo Schäfer}
+\rhead{165220}
+\cfoot{\thepage\ von \pageref{LastPage}}
+
+% aufgabe 5
+\title{Latex für Naturwissenschaftler}
+\author{Ingo Schäfer 165220}
+\date{\today}
+
+% aufgabe 8
+\usepackage{multicol}
+\setlength{\columnseprule}{2pt}
+\setlength{\columnsep}{1cm}
+
+%aufgabe 9
+\newcommand{\mycommand}[1]{\textbf{\ref{#1}}}
+
+% aufgabe 12 (für \sout)
+\usepackage{ulem}
+
+% aufgabe 13
+\usepackage[onehalfspacing,singlespacing]{setspace}
+
+% aufgabe 15
+\usepackage{pifont}
+
+% aufgabe 16
+\usepackage{enumerate}
+
+% aufgabe 18
+\setlength{\skip\footins}{1cm}
+\renewcommand{\footnoterule}{\vspace*{-3pt}\dots\dots\dots\dots\dots\dots\dots\dots\vspace*{2.6pt}}
+
+% aufgabe 19
+\newcommand{\marginlabel}[1]{\mbox{}\reversemarginpar\marginpar{\hspace{8mm}#1}}
+
+% aufgabe 2
+%\hyphenation{Gas\-chro\-ma\-to\-gra\-phie Mass\-en\-spek\-tro\-me\-trie}
+
+% aufgaben für kapitel 3 (Abbildungen und Tabellen)
+\usepackage{graphicx}
+% aufgabe 23
+\graphicspath{ {pics/} {pdf/} {src/} }
+
+% aufgabe 25
+\usepackage{afterpage}
+
+\usepackage{placeins}
+\usepackage{wrapfig}
+
+\usepackage{float}
+\restylefloat{figure}
+\restylefloat{wrapfig}
+
+
+\usepackage{subcaption}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{longtable}
+
+% aufgabe 32
+\usepackage{dcolumn}
+ \newcolumntype{d}[1]{D{.}{.}{#1}}
+ \newcolumntype{e}[1]{D{.}{.}{#1}}
+\usepackage{siunitx} 
+
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{color}
+ \definecolor{LightGrey}{rgb}{0.95,0.95,0.95}
+ \definecolor{LessLightGrey}{rgb}{0.85,0.85,0.85}
+ \definecolor{mygreen}{rgb}{0,0.6,0}
+ \definecolor{mygray}{rgb}{0.5,0.5,0.5}
+ \definecolor{myvauve}{rgb}{0.58,0,0.82}
+ \definecolor{myred}{rgb}{1,0,0}
+ \definecolor{mygold}{rgb}{0.96,0.9,0}
+ 
+\usepackage{rotating}
+
+\usepackage{caption}
+
+
+% für 4_Mathematik
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% für 5_Informatik
+\usepackage{algpseudocode} 
+\usepackage{algorithmicx} 
+\usepackage{algorithm}
+\usepackage{listings}
+% aufgabe 37
+\usepackage{courier}
+
+% für Naturwissen Publikationsformate
+\usepackage{pdfpages}
+%%%%%%%%%%%%%%%%%%%%%%%%   main   %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%aufgabe 46
+\includepdf[pages=1-3]{Aufgabe46/g-brief/beispiel.pdf}
+
+%aufgabe 5
+\maketitle
+
+%aufgabe 6
+\tableofcontents
+\thispagestyle{empty}
+%\setcounter{page}{0}		NOTE: Übersicht wird mitgezählt, aber nicht nummeriert.
+
+\pagebreak
+\section{Basics}					% aufgabe 6
+\label{sec:basics}
+\input{tex/1_Basics}
+
+\pagebreak
+\section{Textformatierung}				% aufgabe 6
+\label{sec:textformatierung}
+\input{tex/2_Formatierung}
+
+\pagebreak
+\section{Abbildungen und Tabellen}			% aufgabe 6
+\label{sec:floats}
+\input{tex/3_Floats}
+
+\pagebreak
+\section{Mathematik}					% aufgabe 6
+\label{sec:mathematik}
+\input{tex/4_Mathematik}
+
+\pagebreak
+\section{Informatik}					% aufgabe 6
+\label{sec:informatik}
+\input{tex/5_Informatik}
+
+\pagebreak
+\section{Abschlussarbeiten}				% aufgabe 6
+\label{sec:abschlussarbeiten}
+\input{tex/6_Abschlussarbeiten}
+
+\pagebreak
+\section{Naturwissenschaftliche Publikationsformate}	% aufgabe 6
+\input{tex/7_Last}
+
+\pagebreak
+\listoffigures				% aufgabe 27
+\listoftables				% aufgabe 32
+
+\label{LastPage}
+\end{document}
