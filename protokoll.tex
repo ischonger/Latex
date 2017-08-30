@@ -1,6 +1,11 @@
 \documentclass[a4paper,portrait,onecolumn,11pt, titlepage, tableofcontents]{article} % aufgabe 1,5,6
 %%%%%%%%%%%%%%%%%%%%%%%% preamble %%%%%%%%%%%%%%%%%%%%%%%%
 
+% aufgabe 10
+\usepackage[utf8]{inputenc} % für deutsche Umlaute.
+\usepackage[T1]{fontenc}
+\usepackage[english,ngerman]{babel}
+
 \usepackage{amsthm}
 \newtheorem{aufgabe}{Aufgabe}
 \usepackage{graphicx}
@@ -14,7 +19,7 @@
 %aufgabe 3
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Ingo Sch\"afer}
+\lhead{Ingo Schäfer}
 \rhead{165220}
 \cfoot{\thepage\ von \pageref{LastPage}}
 
@@ -30,11 +35,6 @@
 
 %aufgabe 9
 \newcommand{\mycommand}[1]{\textbf{\ref{#1}}}
-
-% aufgabe 10
-\usepackage[utf8]{inputenc} % für deutsche Umlaute.
-\usepackage[T1]{fontenc}
-\usepackage[english,ngerman]{babel}
 
 % aufgabe 12
 \usepackage{ulem}
